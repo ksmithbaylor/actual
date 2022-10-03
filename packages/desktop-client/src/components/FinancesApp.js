@@ -43,6 +43,7 @@ import Budget from './budget';
 import { BudgetMonthCountProvider } from './budget/BudgetMonthCountContext';
 import MobileBudget from './budget/MobileBudget';
 import { View } from './common';
+import Custom from './custom';
 import FloatableSidebar, { SidebarProvider } from './FloatableSidebar';
 import GlobalKeys from './GlobalKeys';
 import { ManageRulesPage } from './ManageRulesPage';
@@ -75,6 +76,8 @@ function StackedRoutesInner({ location }) {
   return (
     <Routes location={location}>
       <Route path="/" element={<Navigate to="/budget" replace />} />
+
+      <Route path="/custom" exact component={Custom} />
 
       <Route
         path="/reports/*"

@@ -8,6 +8,7 @@ import * as Platform from 'loot-core/src/client/platform';
 import Add from '../icons/v1/Add';
 import CheveronDown from '../icons/v1/CheveronDown';
 import CheveronRight from '../icons/v1/CheveronRight';
+import Code from '../icons/v1/Code';
 import Cog from '../icons/v1/Cog';
 import Pin from '../icons/v1/Pin';
 import Reports from '../icons/v1/Reports';
@@ -582,8 +583,8 @@ export function Sidebar({
       <View style={{ overflow: 'auto' }}>
         <Item title="Budget" Icon={Wallet} to="/budget" />
         <Item title="Reports" Icon={Reports} to="/reports" />
-
         <Item title="Schedules" Icon={CalendarIcon} to="/schedules" />
+        <Item title="Custom" Icon={Code} to="/custom" />
 
         <Tools />
 
