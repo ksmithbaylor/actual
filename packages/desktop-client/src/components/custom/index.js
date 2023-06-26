@@ -1,9 +1,9 @@
-import React from 'react';
+import { Component } from 'react';
 
 import { View } from '../common';
 import { Page } from '../Page';
 
-class Custom extends React.Component {
+export default class Custom extends Component {
   render() {
     return (
       <Page title="Custom">
@@ -19,5 +19,3 @@ class Custom extends React.Component {
     );
   }
 }
-
-export default Custom;
